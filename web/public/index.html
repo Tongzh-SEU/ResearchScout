@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f7f7f4" />
+    <title>Research Scout</title>
+    <link rel="icon" type="image/png" href="/research_scout_icon.png" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="reading-progress" aria-hidden="true"><span id="progressBar"></span></div>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar" aria-label="周报归档">
+        <div class="brand-row">
+          <img class="brand-mark" src="/research_scout_icon.png" alt="" aria-hidden="true" />
+          <div>
+            <strong>Research Scout</strong>
+            <span id="archiveCount">正在读取归档</span>
+          </div>
+          <button class="icon-button mobile-only" id="closeSidebar" type="button" aria-label="关闭归档列表" title="关闭归档列表">×</button>
+        </div>
+
+        <label class="search-field">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="搜索归档与正文" autocomplete="off" />
+          <kbd>/</kbd>
+        </label>
+
+        <div class="archive-filters" role="tablist" aria-label="归档范围">
+          <button class="filter-tab" id="allReportsTab" type="button" role="tab" aria-selected="true" aria-controls="archiveList" tabindex="0">全部</button>
+          <button class="filter-tab" id="favoritesTab" type="button" role="tab" aria-selected="false" aria-controls="archiveList" tabindex="-1">收藏</button>
+        </div>
+
+        <nav class="archive-list" id="archiveList" role="tabpanel" aria-label="周报列表" tabindex="0"></nav>
+
+        <div class="sidebar-footer">
+          <span><i class="status-dot" aria-hidden="true"></i>自动读取本地归档</span>
+          <button class="text-button" id="refreshButton" type="button">刷新</button>
+        </div>
+      </aside>
+
+      <button class="scrim" id="scrim" type="button" aria-label="关闭归档列表" tabindex="-1"></button>
+
+      <main class="main-pane">
+        <header class="toolbar">
+          <div class="toolbar-start">
+            <button class="icon-button mobile-only" id="openSidebar" type="button" aria-label="打开归档列表" title="打开归档列表">☰</button>
+            <div class="current-context">
+              <span>研究归档</span>
+              <strong id="currentDate">加载中</strong>
+            </div>
+          </div>
+          <div class="toolbar-actions">
+            <button class="icon-button" id="themeButton" type="button" aria-label="切换深浅色" title="切换深浅色">◐</button>
+            <button class="icon-button" id="printButton" type="button" aria-label="打印当前周报" title="打印当前周报">⎙</button>
+          </div>
+        </header>
+
+        <div class="content-layout">
+          <article class="report" id="report" aria-live="polite">
+            <div class="loading-state">
+              <span class="spinner" aria-hidden="true"></span>
+              <p>正在读取本周研究归档</p>
+            </div>
+          </article>
+          <aside class="toc" aria-label="本期目录">
+            <p>本期目录</p>
+            <nav id="tocList"></nav>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
