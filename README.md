@@ -8,7 +8,7 @@
 </h1>
 
 <p align="center">
-  一个会自己追社区热点和论文，并整理成可视化阅读库的科研 Skill。
+  一个会自己追社区热点和论文，并整理成可视化阅读库的科研 Agent Skill。
 </p>
 
 <p align="center">
