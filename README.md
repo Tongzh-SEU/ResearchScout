@@ -1,7 +1,15 @@
-<img src="web/public/research_scout_icon.png" alt="Research Scout 图标" width="144">
 
-# Research Scout
-一个会自己追社区热点和论文，并整理成可视化阅读库的科研 Skill。
+<p align="center">
+  <img src="web/public/research_scout_icon.png" alt="Research Scout 图标" width="144">
+</p>
+
+<h1 align="center">
+  Research Scout
+</h1>
+
+<p align="center">
+  一个会自己追社区热点和论文，并整理成可视化阅读库的科研 Skill。
+</p>
 
 ## 作者的话
 
