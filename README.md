@@ -11,6 +11,11 @@
   一个会自己追社区热点和论文，并整理成可视化阅读库的科研 Skill。
 </p>
 
+<p align="center">
+  <img src="README-assets/reader-overview.png" alt="Research Scout 研究热点阅读界面" width="49%">
+  <img src="README-assets/reader-paper-guide.png" alt="Research Scout 论文导读阅读界面" width="49%">
+</p>
+
 ## 作者的话
 
 每周想看看社区最近又在研究什么，结果热点散在 GitHub、论文和各种讨论里；好不容易让 AI 全部搜集回来，交付的又是一堆密密麻麻的 Markdown 文件，看着就想下周再说。于是我把它做成了“研究追踪 Skill + 本地阅读器”：定时任务每周自动叫醒 AI，Skill 负责搜、筛、讲人话、跨周去重和归档，阅读器负责把结果变成真正能读、能翻、能收藏的网页。我只负责点开看看，这周学术圈又整了什么新活。
